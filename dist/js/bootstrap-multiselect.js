@@ -821,7 +821,7 @@
                         i = i && $(this).prop("checked");
                     });
                     
-                    n.prevAll('.multiselect-group').find('input').prop('checked', i);
+                    n.prevAll('.multiselect-group').first().find('input').prop('checked', i);
                 }, this));
                 
                 $("li.multiselect-all", this.$ul).css('background', '#f3f3f3').css('border-bottom', '1px solid #eaeaea');
